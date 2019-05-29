@@ -12,11 +12,11 @@ reset();
 // randomize crystal and targetscore after each win/loss
 function reset() {
      playerScore = 0;
-     pinkValue = Math.floor(Math.random() * 11)+1;
-     blueValue = Math.floor(Math.random() * 11)+1;
-     greenValue = Math.floor(Math.random() * 11)+1;
-     yellowValue = Math.floor(Math.random() * 11)+1;
-     targetScore = Math.floor(Math.random() * 101)+19;
+     pinkValue = Math.floor(Math.random() * 12)+1;
+     blueValue = Math.floor(Math.random() * 12)+1;
+     greenValue = Math.floor(Math.random() * 12)+1;
+     yellowValue = Math.floor(Math.random() * 12)+1;
+     targetScore = Math.floor(Math.random() * 102)+ 19;
     console.log (targetScore);
     console.log(yellowValue)
 }
