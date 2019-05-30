@@ -9,7 +9,7 @@ var yellowValue;
 var playerScore;
 reset();
 
-// randomize crystal and targetscore after each win/loss
+// randomize crystal and targetscore after each win/loss and start of game.
 function reset() {
      playerScore = 0;
      pinkValue = Math.floor(Math.random() * 12)+1;
@@ -17,10 +17,10 @@ function reset() {
      greenValue = Math.floor(Math.random() * 12)+1;
      yellowValue = Math.floor(Math.random() * 12)+1;
      targetScore = Math.floor(Math.random() * 102)+ 19;
-     $("#target-score").html("Try to match: " + targetScore)
+     $("#target-score").html("Try to match: " +  targetScore)
      console.log(targetScore)
 }
-// Turns images into buttons and prints the random crystal value to  var playerscore
+// Turns images into buttons and prints the random crystal value 
 $("#pink").on("click", function() {
     playerScore = playerScore + pinkValue; 
      $("#player-score").text(playerScore)
