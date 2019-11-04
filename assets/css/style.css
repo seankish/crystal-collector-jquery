@@ -15,12 +15,11 @@ body {
  #heading {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    /* background: orange; */
-    color: white;
-    font-size: 55px;
-    margin-bottom: 15px;
-    margin-left: 10px;
-    padding: 20px;
+    color: rgb(204, 222, 226);
+    font-size: 50px;
+    font-style: italic;
+    margin-top: 30px;
+    margin-bottom: 30px;
     width: 40%;
     display: inline-block;
 }
@@ -29,35 +28,25 @@ body {
 }
 #rulebox {
     margin-top: 5px;
-    margin-left: 10px;
-    margin-bottom: 15px;
-    padding-top: 15px;
-    padding-bottom: 50px;
-    padding-left: 10px;  
+    padding: 15px;
     Background: beige;
-    width: 50%;
     line-height: 1.6; 
     display: inline-block;  
 }
 #rules-text {
-    color: green;
-}
-/* #score-wins-div {
-    display: inline-block;
-} */
-#target-record-div {
-    padding-bottom: 30px;
+    color: teal;
 }
 #target-score {
-    background: #ccc;
-    height: 40px;
-    width: 200px;
-    display: inline-block;
+    font-size: 36px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 15px;
+    /* Background: beige; */
+    color: #fff;
+    line-height: 1.6; 
+    display: inline-block;  
 }
 #record {
-    background: #fff;
-    height: 40px;
-    width: 200px;
     display: inline-block;
 }
 /* #target-score {
@@ -88,12 +77,19 @@ body {
 } */
 #wins-text {
     padding-bottom: 10px;
+    color: #fff;
+    font-size: 24px;
+}
+#losses-text {
+    color: #fff;
+    font-size: 24px;
 }
 .images-row {
     clear: both;
     width: 100%;
     height: 110px;
     display: inline-block;
+    margin-bottom: 10px;
 }
 #pink {
     margin-right: 5px;
@@ -119,26 +115,39 @@ body {
     display: inline-block;
 }
 #score-tag {
-    margin-left: 5px;
     margin-bottom: 5px;
     font-size: 24px;
     background: teal;
     color: white;
     text-align: center;
-    width: 20%;
-    padding-left: 4px;
+    width: 250px;
     display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 #player-score {
-    margin-left: 5px;
+    margin-bottom: 30px;
     text-align: center;
     background: teal;
     color: white;
-    width: 20%;
-    padding-left: 4px;
+    width: 250px;
     height: 50px;
-    font-size: 40px;
+    font-size: 36px;
     font-style: bold;
     display: inline-block;
+    padding-top: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+    #heading {
+        font-size: 36px;
+    }
+    #rulebox {
+        max-width: 80%;
+    }
+    #pink, #green, #yellow, #blue {
+        width: 75px;
+        height: 67.5px;
+    }
 }
     

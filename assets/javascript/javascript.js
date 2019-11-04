@@ -23,7 +23,7 @@ $(document).ready(function() {
         greenValue = Math.floor(Math.random() * 12)+1;
         yellowValue = Math.floor(Math.random() * 12)+1;
         targetScore = Math.floor(Math.random() * 102)+ 19;
-        $("#target-score").html("Try to match: " +  targetScore)
+        $("#target-score").html("Target: " +  targetScore)
         console.log(targetScore)
     }
 
