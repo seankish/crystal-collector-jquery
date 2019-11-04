@@ -26,7 +26,8 @@ INTRO
  #heading {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    color: rgb(204, 222, 226);
+    /* color: rgb(204, 222, 226); */
+    color: #fff;
     font-size: 50px;
     font-style: italic;
     margin-top: 30px;
@@ -102,7 +103,6 @@ CRYSTALS
 }
 #pink {
     margin-right: 5px;
-    margin-left: 5px;
     width: 100px;
     height: 90px;
 }
@@ -153,9 +153,27 @@ MEDIA QUERIES
     #rulebox {
         max-width: 80%;
     }
+    .images-row {
+        margin-bottom: -10px;
+    }
     #pink, #green, #yellow, #blue {
         width: 75px;
         height: 67.5px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #heading {
+        font-size: 24px;
+    }
+    #rules-text {
+        font-size: 12px;
+    }
+    #target-score, #player-score {
+        font-size: 24px;
+    }
+    #score-tag, #wins-text, #losses-text {
+        font-size: 18px;
     }
 }
     
