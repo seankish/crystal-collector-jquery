@@ -9,6 +9,10 @@ $(document).ready(function() {
     var yellowValue;
     var playerScore;
 
+    $("button").click(function(){
+        $("#rulebox").toggle();
+    });
+
     reset();
 
     // Randomize crystal and targetscore after each win/loss and start of game
